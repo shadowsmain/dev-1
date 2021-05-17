@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+def show_today(request):
+    print('today is 5/17/2021')
+    return HttpResponse('hello today 5.17.2021')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('day/', show_today),
 ]
