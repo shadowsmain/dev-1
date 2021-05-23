@@ -6,5 +6,8 @@ import datetime
 
 def index(request):
     today = datetime.date.today()
-
-    return render(request, 'mainapp/index.html', today)
+    context = {
+        'page_title': 'дата',
+        'today': 'datetime.date.today()',
+    }
+    return render(request, 'mainapp/index.html', context)
