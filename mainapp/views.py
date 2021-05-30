@@ -16,13 +16,13 @@ def index(request):
     return render(request, 'mainapp/index.html', context)
 
 
-def clare(request):
-    hour = datetime.time.hour()
-    context = {
-        'page_title': 'дата',
-        'hour': hour,
+#def clare(request):
+#    hour = datetime.time.hour()
+#    context = {
+#        'page_title': 'дата',
+ #       'hour': hour,
 
 
 
-    }
-    return render(request, 'mainapp/index.html', context)
+#    }
+#    return render(request, 'mainapp/index.html', context)
