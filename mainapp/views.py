@@ -10,5 +10,19 @@ def index(request):
         'page_title': 'дата',
         'today': today,
 
+
+
+    }
+    return render(request, 'mainapp/index.html', context)
+
+
+def clare(request):
+    hour = datetime.hour()
+    context = {
+        'page_title': 'дата',
+        'hour': hour,
+
+
+
     }
     return render(request, 'mainapp/index.html', context)
