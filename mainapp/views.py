@@ -17,7 +17,7 @@ def index(request):
 
 
 def clare(request):
-    hour = datetime.hour()
+    hour = datetime.time.hour()
     context = {
         'page_title': 'дата',
         'hour': hour,
