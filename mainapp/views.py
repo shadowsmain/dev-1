@@ -8,6 +8,6 @@ def index(request):
     today = datetime.date.today()
     context = {
         'page_title': 'дата',
-        'today': 'datetime.date.today()',
+
     }
     return render(request, 'mainapp/index.html', context)
